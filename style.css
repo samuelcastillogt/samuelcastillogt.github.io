@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.hero{
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    color: white;
+    background-image: url("https://i.pinimg.com/originals/e4/e1/16/e4e11649ebd8e4acc7a0700d99cb90c9.gif");
+    background-size: cover;
+    background-position: center;
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+.hero h1{
+    font-size: .5em;
+    margin: 10px;
+}
+.text-hero{
+    margin: 0 auto;
+}
+.h2{
+    font-size: 1.5em;
+}
+.menu-responsive{
+    background-color: #2980b9;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+
+    
+
+}
+.menu-responsive a{    
+    text-decoration: none;
+    color: white;
+   
+}
+.menu-responsive li{
+    padding: 50px;
+}
+.hidden{
+    display: none;
+}
+#quien{
+    height: 300px;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+.img-text{
+    height: auto;
+}
+.text-container{
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.especializaciones{
+    background: #2980b9;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    font-size: 2em;
+}
+.area i{
+    font-size: 1.9em;
+}
+#seo{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.clientes{
+    display: grid;
+    grid-template: 150px 150px/ 300px 300px;
+}
+.img-cliente{
+    width: 250px;
+    height: auto;
+}
+.selector-menu{
+
+    font-size: 1.8em;
+}
+.menu{
+    position: fixed;
+    bottom: 40px;
+	right: 40px;
+}
+.img-responsive{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+.proyecto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    border: 1px solid #2980b9;
+    border-radius: 6px;
+}
+.text-proyecto{
+    width: 40%;
+    padding: 20px;
+}
+@media only screen and (max-width: 700px) {
+    #quien{
+     display: block;
+    }
+    .img-text{
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+    }
+    .clientes{
+        display: grid;
+        grid-template: 150px 150px/ 150px 150px;
+    }
+    .img-cliente{
+        width: 150px;
+        height: auto;
+    }
+    .text-proyecto{
+        width: 100%;
+        padding: 20px;
+    }
+}
