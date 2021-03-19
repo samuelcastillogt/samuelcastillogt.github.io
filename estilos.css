@@ -157,6 +157,9 @@ footer{
     color: aliceblue;
 }
 @media only screen and (max-width: 700px) {
+	.text-container{
+        width: 90%;
+    }
     .area{
         width: 200px;
         font-size: 1.2em;
