@@ -104,10 +104,7 @@
     width: 250px;
     height: auto;
 }
- .selector-menu{
-   font-size: 1.8em;
- 
-} 
+
 .menu{
     background-color: #2980b9;
     display: flex;
@@ -116,9 +113,14 @@
     align-items: center;
     position: fixed;
     padding: 20px;
-    bottom: 50px;
-	right: 50px;
+    bottom: 40px;
+	right: 40px;
 }
+.selector-menu{
+    width: 60px;
+    height: 60px;
+    font-size: 1.8em;
+} 
 .img-responsive{
     width: 100%;
     max-width: 400px;
@@ -184,7 +186,5 @@ footer{
         padding: 0;
         margin:10px;
     }
-    .menu li{
-        font-size: 1.3em;
-    }
+    
 }
