@@ -186,7 +186,7 @@ footer{
         padding: 0;
         margin:10px;
     }
-    .menu-responsive{
+    .menu li{
         font-size: 1.3em;
     }
 }
