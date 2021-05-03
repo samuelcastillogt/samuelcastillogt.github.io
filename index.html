@@ -14,6 +14,7 @@
     <title>Samuel Castillo</title>
 </head>
 <body>
+   
     <div class="main">
     <section class="hero" id="hero">
   
@@ -29,7 +30,7 @@
             <p>Hola soy Samuel Castillo, vivo en <b>Guatemala</b> y me dedico a el <b>SEO</b> y me dedico al  desarrollo <b>Frontend</b>. Mi especializacion en desarrollo es el JavaScript. En el lado del <b>SEO</b> me especializo tanto en el <b>SEO Onpage</b> como el <b>SEO Offpage</b> sin olvidar el <b>posicionamiento</b> de las fichas de <b>Google My Business</b>.</p>
         </div>
     </section>
-    <section class="especializaciones">
+    <section class="especializaciones" id="experiencia">
         <div class="area">
             <i class="fab fa-google"></i>
             <p>SEO</p>
@@ -72,7 +73,9 @@
                         <li>Css Responsive</li>
                         <li>App de empresa desarrollada en Angular</li>
                     </ul>
+                    
                 </div>
+                <a href="https://pointz.ml" class="btn-link">Ver</a>
             </div>  
             <div class="proyecto">
                 <img src="/img/inmobiliaria.png" alt="frontend guatemala" class="img-responsive">
@@ -88,12 +91,12 @@
                         
                     </ul>
                 </div>
+                <a href="https://inmobiliaria-blush.vercel.app/" class="btn-link">Ver</a>
             </div>           
         </div>
     </section>
-    <section class="text-container">
+    <section class="text-container" id="contacto">
         <p class="h2">Para contactar conmigo puedes usar:</p>
-        <li><i class="fas fa-at"></i> <span>samuelcastilloseo@gmail.com</span></li>
         <li><i class="fab fa-github"></i> <span>/samuelcastillogt</span></li>
         <li><i class="fab fa-blogger"></i> <span>samuelcastilloseo.blogspot.com</span></li>
         <li><i class="fab fa-linkedin"></i> <span>/Seo-Guatemala</span></li>
@@ -101,18 +104,24 @@
         
 
     </section>
-    <div class="menu">
-        
-        <div class="menu-responsive hidden">
-            <li><a href="#hero">Inicio</a></li>
-            <li><a href="#quien">Quien soy...</a></li>
-            <li><a href="#seo">Trabajos SEO</a></li>
-            <li><a href="#frontend">Trabajos Frontend</a></li>
+    <div class="container-menu">
+        <div class="menu-real hidden" id="m-menu">
+            <ul>
+                <li id="elemento"><a href="#quien">Quien Soy</a></li>
+                <li id="elemento"><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#seo">Trabajos como SEO</a></li>
+                <li><a href="#frontend">Proyectos</a></li>
+                <li><a href="https://samuelcastilloseo.blogspot.com">Blog</a></li>
+                <li id="elemento"><a href="#contacto">Contacto</a></li>
+            </ul>
         </div>
-        <i class="fas fa-ellipsis-h selector-menu"></i>
-       
+        <div class="menu" id="menu">
+     
+            <i class="fas fa-ellipsis-h selector-menu" id="menu-selector"></i>   
+        </div>
+        
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  
     <script src="index.js"></script>
     <footer>
         Samuel Castillo <i class="fas fa-copyright"></i> 2021
