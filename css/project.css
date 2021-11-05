@@ -1,6 +1,8 @@
 .project {
-  padding-block-start: 40px;
-  padding-block-end: 40px;
+  padding: 20px;
+  border: 1px solid rgba(244, 152, 49, 1);
+  background-color: black;
+  margin: 10px;
 }
 
 

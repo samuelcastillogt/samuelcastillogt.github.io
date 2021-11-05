@@ -1,10 +1,19 @@
 .hero  {
   padding-block-start: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(244, 152, 49, 1);
 }
 
 .hero-description {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   gap: 14px;
 }
 
@@ -19,13 +28,13 @@
 
 
 .hero h1 {
-  font: var(--headline3);
-  margin: 0;
-}
-/* .hero h1 span:nth-of-type(1) { */
-.hero h1 span:first-child {
-  font: var(--headline5);
+  font-size: 1.8em;
   display: block;
+ 
+  word-spacing: 10px;
+}
+.hero-title{
+  font-size: 1.8em;
 }
 
 @media screen and (min-width: 768px) {
