@@ -12,7 +12,21 @@
   text-decoration: none;
   text-align: center;
 }
-
+.button2 {
+  background: var(--purple);
+  color: var(--white);
+  font: var(--button);
+  padding-inline-start: 13px;
+  padding-inline-end: 13px;
+  padding-block-start: 13px;
+  padding-block-end: 13px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  margin: 10px;
+}
 .button.is-secondary {
   background: unset;
   color: var(--white);

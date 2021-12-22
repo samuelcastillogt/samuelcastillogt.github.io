@@ -1,21 +1,29 @@
 .project {
+  display: flex;
+  flex-direction: column;
   padding: 20px;
   border: 1px solid rgba(244, 152, 49, 1);
-  background-color: black;
+  /* background-color: #7052ff; */
   margin: 10px;
+  width: 40%;
+  min-width: 300px;
+  /* min-height: 300px; */
+  font-size: 1.2em;
 }
 
 
-.project-image img {
+/* .project-image img {
   max-inline-size: 100%;
-}
+} */
 .tablet{
-  width: 626px;
+  width: 80%;
+  max-height: 200px;
 }
 .project-description {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  font-size: 13px;
+  color: black;
 }
 
 @media screen and (min-width: 768px) {
@@ -25,14 +33,10 @@
     gap: 32px;
     padding-block-start: 80px;
     padding-block-end: 80px;
+    min-height: 200px;
   }
   .project-description {
     flex: 1;
 
-  }
-  .project:nth-child(odd) .project-image {
-    order: 2;
-    flex: 1;
-    text-align: center;
   }
 }
