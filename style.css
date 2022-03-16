@@ -15,6 +15,19 @@ i {
   color: #ffffff;
 }
 
+.hidden {
+  display: none;
+}
+
+#proyectos {
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 6px;
+  margin: 10px;
+  background-color: #2b3137;
+  color: #ffffff;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -218,20 +231,14 @@ header .menu li {
 }
 
 .project {
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-animation: ease-in-out;
+          animation: ease-in-out;
   min-width: 250px;
   border: 1px solid white;
   border-radius: 6px;
   margin: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

@@ -1,6 +1,11 @@
-document.getElementById("menu-selector").addEventListener("click", ()=>{
-document.getElementById("m-menu").classList.toggle("hidden");
-})
-document.getElementById("m-menu").addEventListener("click",() =>{
-    document.getElementById("m-menu").classList.add("hidden");
+document.getElementById("proyectos").addEventListener("click", ()=>{
+    const mensaje = document.getElementById("proyectos").textContent.toString()
+    console.log(mensaje)
+    if(mensaje  == "Ver Proyectos"){
+        document.getElementById("proyectos").textContent = "Ocultar"
+    }else if(mensaje == "Ocultar"){
+        document.getElementById("proyectos").textContent= "Ver Proyectos"
+    }
+    document.getElementById("project").classList.toggle("hidden")
+    document.getElementById("project").classList.toggle("proyectos")
 })

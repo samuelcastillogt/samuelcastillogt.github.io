@@ -1,16 +1,22 @@
 .hero  {
-  padding-block-start: 16px;
+  
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  /* background-color: #7052ff; */
+  background-color: white;
+  margin: 10px;
+  border-radius: 20px;
+  color: black;
+  border: 2px solid #e6a15c;
 }
-.hero-img{
-  max-width: 300px;
-  max-height: 300px; 
-  border-radius: 50%;
+.hero-img {
+  width: 30%;
+  border-radius: 20px;
+}
+.hero-img img{
+  max-width: 250px;
 }
 .hero-description {
   display: flex;
@@ -21,10 +27,11 @@
 }
 
 .hero-image {
-  background: linear-gradient(90deg, rgba(62,81,125,1) 0%, rgba(185,81,67,1) 40%, rgba(255,115,96,1) 100%);
-  border-radius: 50%;
+  background: #e6a15c;
+  border-radius: 20px;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 5px;
 
 }
@@ -62,6 +69,6 @@
 
 @media screen and (min-width: 1024px) {
   .hero-image img {
-    width: 100%;
+    width: 300px;
   }
 }

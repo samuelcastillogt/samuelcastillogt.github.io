@@ -1,0 +1,53 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    font-size: 13px;
+    background: #2b3137;
+}
+.social{
+    margin: 10px;
+}
+.yellow-text{
+    color: black;
+    background: yellow;
+}
+.presentacion{
+    width: 50%;
+    padding: 20px;
+    font-size: 1em;
+    background: linear-gradient(70deg, rgb(58, 139, 251) 32%, rgb(46, 157, 66));
+}
+.primary-container{
+    display: flex;
+}
+.card{
+    
+}
+.footer{
+    padding: 10px;
+    border-top: 1px solid white;
+    font-size: 1em;
+}
+@media screen and(max-width: 750px) {
+    .primary-container{
+        display: block;
+    }
+    .presentacion{
+        width: 80%;
+    }
+}
+.tech{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    background: #2b3137;
+    color: white;
+    .tec{
+        font-size: 1.5em;
+    }
+}

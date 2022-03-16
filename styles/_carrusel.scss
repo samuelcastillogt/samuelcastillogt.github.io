@@ -1,0 +1,36 @@
+.proyectos{
+    display: flex;
+    overflow-x: scroll;
+     
+}
+
+#certificaciones{
+    img{
+        width: 300px;
+    }
+}
+.project{
+    transition: 2s;
+    animation: ease-in-out;
+    min-width: 250px;
+    border: 1px solid white;
+    border-radius: 6px;
+    margin: 10px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #2b3137;
+    img{
+        width: 70%;
+    }
+    .title{
+        background-color: yellow;
+        color: black;
+        transform: rotate(10deg);
+        text-decoration: none;
+        color: black;
+        padding: 5px;
+    }
+    .descripcion{
+        margin: 10px;
+    }
+}   

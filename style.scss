@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+body{
+    background: #24292d;
+    color: #ffffff;
+}
+i{
+    font-size: 1.5em;
+    margin: 5px;
+    color: #ffffff;
+}
+.hidden{
+    display:none;
+}
+#proyectos{
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 6px;
+    margin: 10px;
+    background-color: #2b3137;
+    color: #ffffff;
+}
+@import "./styles/header";
+@import "./styles/hero";
+@import "./styles/button-icon";
+@import "./styles/container";
+@import "./styles/carrusel";
+@import "./styles/sidebar";

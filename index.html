@@ -24,7 +24,7 @@
     
     <div class="sidebar">
       <section class="hero">
-        <img src="./images/samuel_castillo.png"  alt="samuel castillo" class="hero-image">
+        <img src="./images/samuel_castillo.webp"  alt="samuel castillo" class="hero-image">
     <div class="hero-description">
       <div class="hero-title">
         Samuel Castillo
@@ -56,7 +56,8 @@
       <p>En mis proyectos propios intento exprimir al maximo mis conocimientos en <b>Marketin digital</b>, <b>SEO</b> y <b>desarrollo web</b>. Todo lo he documentado en mi blog, para que sea accesible para todo aquel interesado.</p>
     </div>
   </div>
-    <section class="proyectos" id="project">
+  <button id="proyectos">Ver Proyectos</button>
+    <section class="hidden" id="project">
       <div class="project neumorphism">
         <div class="project-image">
           <img src="./images/paginas web guatemala.png" alt="samuel castillo" class="tablet neumorphism">
@@ -158,7 +159,7 @@
       </div>
     </section>
     <section id="certificaciones" class="proyectos">
-      <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgIQFk0fIVjHfiZzclJcAhGk0LTmomgUfK-ZCN72_J6KRpqmijqF_cDtH7PxJTZc49MkV4_9rNAbfW9Au1sHmoje1mlHMpoD8I5DDLd37LD_0tGL4cwgpEhSQNsmPTu-fV8SENt52cghWRNPupk6wjnexJMJD6dpgrMmAdrjZj3J6xvh2Pc7HRHlRYg=s320" alt="desarrollador web guatemala" title="samuel castillo">
+      
       <img src="./images/paginas web guatemala (2).png" alt="desarrollador web guatemala" title="samuel castillo">
       <img src="./images/react js guatemala.png" alt="desarrollador web guatemala" title="samuel castillo">
       <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhx0kqo0tXCna8eFZVfdZGfZbir0Qt93-TfGdDsp7fY5fO3QTbR04SFrD3cl_rLrL1Sn3vv5tBXBvYNLRPtHvezMsBqdTeOP8KMID9BeQhyxoXp4cBEkwF-1e9VlxK6hqSH4McVK_DhT4niTnVd1tzsqq2tk6N0d-3C8KexqrnpezULsisH4kFbtQoA=s320" alt="desarrollador web guatemala" title="samuel castillo">
@@ -166,7 +167,7 @@
     </section>
    <div class="presentacion container">
      <h2>Mis certificaciones en desarrollo web</h2>
-      <p>Ademas de ser <b>SEO</b> certificado, cuento con en <b>desarrollo web</b> especializado en JavaScript y React. </p>
+      <p>Ademas de ser <b>SEO</b> certificado, cuento con certificaciones en <b>desarrollo web</b> especializado en JavaScript y React. </p>
       <p>Cuento con experiencia en React, React Native, JavaScript, asi como experiencia en gestion de proyectos, diseño de interfaces de usuario, 
         diseño de servicios y productos.
       </p>
@@ -189,8 +190,15 @@
           Firebase
         </div>
       </div>
+      <div class="proyectos" id="certificaciones">
+        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgIQFk0fIVjHfiZzclJcAhGk0LTmomgUfK-ZCN72_J6KRpqmijqF_cDtH7PxJTZc49MkV4_9rNAbfW9Au1sHmoje1mlHMpoD8I5DDLd37LD_0tGL4cwgpEhSQNsmPTu-fV8SENt52cghWRNPupk6wjnexJMJD6dpgrMmAdrjZj3J6xvh2Pc7HRHlRYg=s320" alt="desarrollador web guatemala" title="samuel castillo">
+        <img src="./images/react native guatemala.png" title="desarrollador react native guatemala" alt="react native guatemala"/>
+      </div>
       <div class="container">
         <h2>Mi experiencia en Startup´s</h2>
+        <p>Como parte de mi experiencia laboral, he colaborado con StartUp que van desde Marketplace hasta 
+          MedTech.
+        </p>
       </div>
     <footer class="footer" id="contact">
       <div class="footer-content">
@@ -206,29 +214,20 @@
     </footer>
   </div>
 
-
   <script type="application/ld+json">
     {
-      "@context": "https://schema.org/",
-      "@type": "Person",
-      "name": "Samuel Castillo",
-      "url": "https://samuelcastillogt.github.io/",
-      "image": "https://avatars.githubusercontent.com/u/73082164?v=4",
-      "sameAs": [
-        "https://www.facebook.com/samuelcastilloseo",
-        "https://twitter.com/samuelcgt",
-        "https://www.linkedin.com/in/seo-guatemala/",
-        "https://www.youtube.com/c/SamuelCastillo",
-        "https://platzi.com/p/samuelcastillogt/",
-        "https://samuelcastilloseo.blogspot.com/"
-      ],
-      "jobTitle": "Desarrollador web, consultor seo, product desingner",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Independiente"
-      }  
+      "@context" : "http://schema.org",
+      "@type" : "LocalBusiness",
+      "name" : "Samuel Castillo",
+      "image" : "https://samuelcastillogt.github.io/images/samuel_castillo.png",
+      "email" : "samuelcastiloseo@gmail.com",
+      "address" : {
+        "@type" : "PostalAddress",
+        "addressCountry" : "Guateamala"
+      },
+      "url" : "https://samuelcastillogt.github.io/"
     }
     </script>
-
+    <script src="./index.js"></script>
 </body>
 </html>
