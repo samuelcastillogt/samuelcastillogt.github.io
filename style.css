@@ -5,7 +5,7 @@
 }
 
 body {
-  background: #24292d;
+  background: #16172B;
   color: #ffffff;
 }
 
@@ -78,25 +78,20 @@ header .menu li {
   text-align: center;
 }
 
-.hero .hero-image {
-  background-color: black;
+.hero .hero-img {
+  background-color: #4AADF5;
   padding: 5px;
   border-radius: 6px;
   min-width: 210px;
-  width: 50%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
 
-.hero .hero-image img {
+.hero .hero-img img {
   width: 100%;
-  min-width: 200px;
-  border-radius: 6px;
-}
-
-.hero .hero-img:hover {
-  -webkit-transition: 2s;
-  transition: 2s;
-  -webkit-transform: rotate(60deg);
-          transform: rotate(60deg);
+  height: 200px;
+  border-radius: 50%;
 }
 
 .hero .hero-description {
@@ -110,6 +105,14 @@ header .menu li {
   width: 150px;
   -webkit-transform: rotate(10deg);
           transform: rotate(10deg);
+}
+
+.hero-text {
+  padding: 10px;
+}
+
+.hero-text h1 {
+  font-size: 1.3em;
 }
 
 @media screen and (max-width: 500px) {
@@ -159,7 +162,12 @@ header .menu li {
   margin: 0 auto;
   width: 80%;
   font-size: 13px;
-  background: #2b3137;
+  background: #232556;
+  padding: 20px;
+}
+
+.container img {
+  width: 80%;
 }
 
 .social {
@@ -207,10 +215,16 @@ header .menu li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 auto;
+  margin: 10px;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: #2b3137;
   color: white;
 }
@@ -236,9 +250,17 @@ header .menu li {
   -webkit-animation: ease-in-out;
           animation: ease-in-out;
   min-width: 250px;
+  max-width: 300px;
   border: 1px solid white;
   border-radius: 6px;
   margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -247,7 +269,7 @@ header .menu li {
 }
 
 .project img {
-  width: 70%;
+  max-width: 200px;
 }
 
 .project .title {
