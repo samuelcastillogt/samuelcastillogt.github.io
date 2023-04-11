@@ -109,6 +109,8 @@ header .menu li {
 
 .hero-text {
   padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero-text h1 {
@@ -161,7 +163,7 @@ header .menu li {
           align-items: center;
   margin: 0 auto;
   width: 80%;
-  font-size: 13px;
+  font-size: 15px;
   background: #232556;
   padding: 20px;
 }
@@ -182,7 +184,7 @@ header .menu li {
 .presentacion {
   width: 50%;
   padding: 20px;
-  font-size: 1em;
+  font-size: 14px;
   background: linear-gradient(70deg, #3a8bfb 32%, #2e9d42);
 }
 
@@ -204,6 +206,9 @@ header .menu li {
   }
   .presentacion {
     width: 80%;
+  }
+  .proyectos {
+    overflow-x: scroll;
   }
 }
 
@@ -237,7 +242,7 @@ header .menu li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow-x: scroll;
+  /* overflow-x: scroll; */
 }
 
 #certificaciones img {

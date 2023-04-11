@@ -12,12 +12,7 @@
         border-radius: 6px;
         min-width: 210px;
         width: 50%;
-        img{
-            width: 100%;
-            min-width: 200px;
-            border-radius: 6px;
-            
-        }
+
     }
     .hero-img:hover{
         transition: 2s;
@@ -27,6 +22,7 @@
     .hero-description{
         width: 40%;
     }
+    
 
 }
 .hero-title{
@@ -35,6 +31,10 @@
     padding: 5px;
     width: 150px;
     transform: rotate(10deg);
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
 }
 @media screen and (max-width: 500px) {
     .hero{
