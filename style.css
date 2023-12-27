@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 body {
@@ -74,8 +74,9 @@ header .menu li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 10px;
+  margin: 0;
   text-align: center;
+  background-color: rgba(247, 246, 246, 0.2);
 }
 
 .hero .hero-img {
@@ -164,14 +165,16 @@ header .menu li {
   margin: 0 auto;
   width: 80%;
   font-size: 15px;
-  background: #232556;
+  background: #1d1f4b59;
   padding: 20px;
 }
 
 .container img {
   width: 80%;
 }
-
+.container h2{
+  font-size: 20px;
+}
 .social {
   margin: 10px;
 }
