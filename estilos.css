@@ -379,6 +379,36 @@ box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.8);
     border-radius: 3px;
     opacity: 0.9;
   }
+  .bloque-tierra:hover{
+    cursor: pointer;
+  }
+  .herbo-container{
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .mine{
+    rotate: 90deg;
+    position: absolute;
+    width: 30px;
+    left: -30px;
+    z-index: 9099999;
+  }
+  .mine-ani{
+    animation: mine-mov 5s;
+  }
+  @keyframes mine-mov {
+    0% {
+      left: -20px;
+    }
+    50%{
+        left: -10px;
+    }
+    100% {
+      right: 0px;
+    }
+  }
+
 /* @media only screen and (max-width: 700px) {
     .area{
         width: 200px;

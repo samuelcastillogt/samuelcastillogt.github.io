@@ -66,17 +66,28 @@
 </div>
 </div>
 <div class="container">
-  <div class="bloque-tierra"></div>
+  
+  <div class="bloque-tierra" id="minecraft"><img id="mine" class="mine" src="https://static.wikia.nocookie.net/smpearth/images/7/71/Herobrine_avatar.jpg"/></div>
+
 </div>
+<div class="herbo-container">
+  
+</div>
+
 <footer>
   <div class="container">
     <p></p>
   </div>
 </footer>
 <script>
-  ///Si aqui esta el codigo del bumba
+  
   let clicks = 0
+  let clicksMine = 0
   const bumba = document.getElementById("bumba")
+  const minecraft = document.querySelector("#minecraft")
+  const herbo = document.getElementById("mine")
+
+///Si aqui esta el codigo del bumba
   bumba.addEventListener("click", ()=>{
     if(clicks == 5){
       const end = document.getElementById("end")
@@ -103,6 +114,16 @@
     
   })
 
+///Si aqui esta el codigo del herbonai
+  minecraft.addEventListener("click", ()=>{
+    if(clicksMine == 5){
+      // herbo.classList.remove("mine")
+     herbo.classList.add("mine-ani")
+      clicksMine = 0
+    }else{
+      clicksMine++
+    }
+  })
 </script>
   </body>
 </html>
