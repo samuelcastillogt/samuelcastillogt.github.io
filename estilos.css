@@ -335,7 +335,7 @@ box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.8);
     flex-wrap: nowrap;
     overflow: scroll;
 }
-@media only screen and (max-width: 700px) {
+/* @media only screen and (max-width: 700px) {
     .area{
         width: 200px;
         font-size: 1.2em;
@@ -376,4 +376,4 @@ box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.8);
         height: 80vh;
     }
     
-}
+} */
