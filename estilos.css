@@ -6,7 +6,17 @@
 p{
     padding: 10px;
 }
-
+body{
+    background-color: #f7f7f7;
+}
+.main{
+    width: 100%;
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .hero{
     font-family: 'Press Start 2P', "cursive";
     display: flex;
@@ -21,7 +31,7 @@ p{
     text-shadow: black 0.1em 0.1em 0.2em
 }
 .hero h1{
-    font-size: .3em;
+    font-size: 3em;
     margin-bottom: 10px;
 }
 .text-hero{
@@ -29,6 +39,9 @@ p{
 }
 .hidden{
     display: none;
+}
+.hero .h2{
+    font-size: 10px;
 }
 .h2{
     font-size: 1.5em;
@@ -71,7 +84,7 @@ p{
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    text-align: center;
     justify-content: center;
     align-items: center;
     /* margin: 10px; */
@@ -232,7 +245,96 @@ header{
     -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.8); 
 box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.8);
 }
+.mmmm{
+    width: 100%;
+    position: relative;
+}
+.img-amimation{
+    position: absolute;
+    width: 100px; /* Ajusta el tamaño de la imagen */
+    animation: moverIzqDer 5s infinite;
+}
+  @keyframes moverIzqDer {
+    0% {
+      right: 0;
+    }
+    50%{
+        right: 50%;
+    }
+    100% {
+      right: 100%;
+    }
+  }
 
+  .cartucho {
+    width: 240px;
+    height: 160px;
+    background-color: #e60012; /* Color rojo típico de Famicom */
+    border-radius: 8px;
+    position: relative;
+    border: 5px solid #d4c12b; /* Bordes dorados */
+    box-shadow: inset 0px 5px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    margin: 10px;
+  }
+
+  /* Detalles en la parte superior e inferior */
+  .cartucho::before, .cartucho::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #c4a212;
+  }
+
+  /* Parte superior del cartucho */
+  .cartucho::before {
+    top: 0;
+    height: 20px;
+    border-bottom: 3px solid #a38b1c;
+  }
+
+  /* Parte inferior del cartucho */
+  .cartucho::after {
+    bottom: 0;
+    height: 30px;
+    border-top: 3px solid #a38b1c;
+  }
+
+  /* Área de la portada (texto del div) */
+  .portada {
+    width: 200px;
+    height: 100px;
+    background-color: #f2f2f2; /* Color claro para la portada */
+    border: 3px solid #333;
+    box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: #333;
+  }
+
+  /* Efecto de sombra general */
+  .cartucho {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+  }
+
+.tecnologias{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: scroll;
+}
 @media only screen and (max-width: 700px) {
     .area{
         width: 200px;
