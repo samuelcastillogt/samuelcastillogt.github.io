@@ -335,6 +335,50 @@ box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.8);
     flex-wrap: nowrap;
     overflow: scroll;
 }
+.hidden{
+    display: none;
+}
+.modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.bloque-tierra {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    background-color: #7a5c43; /* Color de la tierra */
+    border: 3px solid #2f2f2f;
+    box-shadow: 0 5px 0 #2f2f2f; /* Simula una sombra */
+  }
+
+  /* Capa de césped */
+  .bloque-tierra::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background-color: #3e9a40; /* Color de la hierba */
+    border-bottom: 3px solid #2f2f2f; /* Borde inferior de la hierba */
+  }
+
+  /* Detalles de la textura de césped */
+  .bloque-tierra::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    width: 90%;
+    height: 20px;
+    background: linear-gradient(to right, #3e9a40 30%, #89c04f 70%); /* Degradado simula textura de césped */
+    border-radius: 3px;
+    opacity: 0.9;
+  }
 /* @media only screen and (max-width: 700px) {
     .area{
         width: 200px;

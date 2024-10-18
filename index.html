@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="module" crossorigin src="/assets/index-W0_Vd2Oj.js"></script>
@@ -19,12 +19,13 @@
         <h2 class="h2">Desarrollador web FullStack</h2>
         <p>¡Hola! Soy Samuel Castillo, desarrollador web full stack con una sólida experiencia en la creación de aplicaciones dinámicas y escalables. Estoy certificado en UX Design por Google, lo que me permite diseñar interfaces centradas en el usuario que maximizan la accesibilidad y la usabilidad. Además, he trabajado como desarrollador en Walmart, donde utilicé React para construir soluciones web innovadoras y optimizadas para el rendimiento.</p>
       </div>
-    </div>
+
     <div class="text-container">
       <h2 class="h2">Tecnologias que utilizo</h2>
+      <p>Estos son los lenguajes de programacion que manejo de manera profesional.</p>
     </div>
 <div class="mmmm">
-  <img class="img-amimation" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHR-sLOrCI0ZroQw-hcpTtyGtm7nNJqHmW2AQfIYsAMAmkI2p7noXqlXJfT-U6cOqIqWs&usqp=CAU" alt="react guatemala" />
+  <img class="img-amimation" id="bumba" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHR-sLOrCI0ZroQw-hcpTtyGtm7nNJqHmW2AQfIYsAMAmkI2p7noXqlXJfT-U6cOqIqWs&usqp=CAU" alt="react guatemala" />
 </div>
 <div class="tecnologias">
   <div class="cartucho">
@@ -33,15 +34,75 @@
     </div>
   </div>
   <div class="cartucho">
-    <div class="portada">
-      <p>Node</p>
+    <div class="portada" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBwzWqFVu66ck-2u_nDBgLTZbR3cNjpUCbWg&s); background-position: center; background-size: contain; background-repeat: no-repeat;">
+      <p style="color: white; font-weight: bolder; font-size: 20px; background-color: rgba(0, 0, 0, 0.6);">Node JS</p>
     </div>
   </div>
 </div>
-<div class="cartucho">
-  <div class="portada">
-    <p>Mi Cartucho NES</p>
+<img src="https://mario.wiki.gallery/images/3/3e/Goomba_%28stomped-eng%29_-_Super_Mario_Sticker.gif" class="hidden" id="end"/>
+
+<div class="tecnologias">
+  <div class="cartucho">
+    <div class="portada" style="background-image: url(https://cdn1.iconfinder.com/data/icons/soleicons-fill-vol-1/64/reactjs_javascript_library_atom_atomic_react-512.png); background-position: center; background-size: contain; background-repeat: no-repeat;">
+      <p style="color: white; font-weight: bolder; font-size: 20px; background-color: rgba(0, 0, 0, 0.6);">React</p>
+    </div>
+  </div>
+  <div class="cartucho">
+    <div class="portada" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJQXQTLkMhJTp2Ds_eGjlGb4kgIWKJlMal3g&s); background-position: center; background-size: contain; background-repeat: no-repeat;">
+      <p style="color: white; font-weight: bolder; font-size: 20px; background-color: rgba(0, 0, 0, 0.6);">React Native</p>
+    </div>
   </div>
 </div>
+<div class="text-container">
+  <h2 class="h2">Un poco sobre mi experiencia</h2>
+  <p>He trabajado en equipos agiles (scrum y canvan) ocupando varios roles en los mismos. Principalmente he trabajado como desarrollador Front-end, 
+    pero dentro de mis skills esta el Back-end y el manejo de bases de datos relacionales y no relacionales.
+  </p>
+  <p>
+    Mis certificaciones en diseño UX y mi experiencia en equipos de alto rendimiento me permiten aportar, 
+    no solamente codigo, tambien experiencia en procesos exigentes, metodologias de desarrollo, flujos de trabajo,
+
+  </p>
+</div>
+</div>
+<div class="container">
+  <div class="bloque-tierra"></div>
+</div>
+<footer>
+  <div class="container">
+    <p></p>
+  </div>
+</footer>
+<script>
+  ///Si aqui esta el codigo del bumba
+  let clicks = 0
+  const bumba = document.getElementById("bumba")
+  bumba.addEventListener("click", ()=>{
+    if(clicks == 5){
+      const end = document.getElementById("end")
+      end.classList.remove("hidden")
+      bumba.classList.add("hidden")
+      clicks = 0
+      setTimeout(function(){
+        bumba.setAttribute("src", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHR-sLOrCI0ZroQw-hcpTtyGtm7nNJqHmW2AQfIYsAMAmkI2p7noXqlXJfT-U6cOqIqWs&usqp=CAU")
+        end.classList.add("hidden")
+        bumba.classList.remove("hidden")
+
+      }, 4000)
+    }else{
+      clicks++
+      const src = bumba.getAttribute("src")
+
+    if(src == "https://img.clipart-library.com/2/clip-mario-boo/clip-mario-boo-12.png" ){
+      bumba.setAttribute("src", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHR-sLOrCI0ZroQw-hcpTtyGtm7nNJqHmW2AQfIYsAMAmkI2p7noXqlXJfT-U6cOqIqWs&usqp=CAU")
+    }else{
+      bumba.setAttribute("src", "https://img.clipart-library.com/2/clip-mario-boo/clip-mario-boo-12.png")
+    }
+    }
+    
+    
+  })
+
+</script>
   </body>
 </html>
