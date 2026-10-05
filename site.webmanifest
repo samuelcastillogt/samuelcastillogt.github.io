@@ -1,0 +1,13 @@
+{
+  "name": "Samuel Castillo · Desarrollador Full Stack",
+  "short_name": "Samuel Castillo",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "/media/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ],
+  "start_url": "/",
+  "display": "browser",
+  "theme_color": "#2563eb",
+  "background_color": "#f6f7fb",
+  "lang": "es"
+}
