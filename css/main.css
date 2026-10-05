@@ -238,11 +238,29 @@ p { margin: 0 0 1em; }
 .project p { color: var(--text-muted); }
 .project ul { padding-left: 18px; color: var(--text-muted); margin: 0 0 20px; }
 .project li { margin-bottom: 4px; }
+.project .tags { padding-left: 0; }
 .project-links { display: flex; flex-wrap: wrap; gap: 10px; }
 
+/* Proyectos web: captura apaisada en lugar de pantalla de teléfono */
+.project-wide { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); }
+.project-wide .project-media img {
+  aspect-ratio: 16 / 10; border-width: 1px; border-color: var(--border); border-radius: 12px;
+}
+.subsection-title { margin: clamp(36px, 5vw, 56px) 0 18px; font-size: 1.4rem; }
+.card-img {
+  width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top;
+  border-radius: 10px; border: 1px solid var(--border); margin-bottom: 14px;
+}
+.card .project-links { margin-top: auto; }
+.more-link { margin: 24px 0 0; font-weight: 600; }
+
+@media (max-width: 860px) {
+  .project-wide { grid-template-columns: 1fr; }
+}
 @media (max-width: 700px) {
   .project { grid-template-columns: 1fr; }
   .project-media { max-width: 200px; }
+  .project-wide .project-media { max-width: none; }
 }
 
 /* ---------- Stack ---------- */

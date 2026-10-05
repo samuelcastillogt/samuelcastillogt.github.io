@@ -67,7 +67,7 @@
         "inLanguage": "es",
         "isPartOf": { "@id": "https://samuelcastillogt.github.io/#website" },
         "dateCreated": "2022-12-23T12:34:00-06:00",
-        "dateModified": "2026-10-05T12:00:00-06:00",
+        "dateModified": "2026-10-05T18:00:00-06:00",
         "mainEntity": { "@id": "https://samuelcastillogt.github.io/#person" }
       },
       {
@@ -84,7 +84,7 @@
         "knowsLanguage": ["es"],
         "knowsAbout": [
           "JavaScript", "TypeScript", "React", "React Native", "Next.js", "Node.js", "NestJS",
-          "Express", "C#", ".NET", "SQL Server", "Oracle", "PostgreSQL", "MySQL", "Firebase",
+          "Express", "Python", "FastAPI", "Playwright", "Expo", "C#", ".NET", "SQL Server", "Oracle", "PostgreSQL", "MySQL", "Firebase",
           "Kubernetes", "Microservicios", "Integración SAP", "Diseño UX", "SEO técnico"
         ],
         "hasCredential": [
@@ -121,6 +121,26 @@
         "url": "https://play.google.com/store/apps/details?id=com.samuelcastillo.radiosFree",
         "author": { "@id": "https://samuelcastillogt.github.io/#person" },
         "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+      },
+      {
+        "@type": "WebApplication",
+        "name": "ChordWeaver",
+        "alternateName": "Tejedor de Acordes",
+        "description": "Analizador armónico: explica la tonalidad, los grados y la función de los acordes de una canción.",
+        "applicationCategory": "MusicApplication",
+        "operatingSystem": "Web",
+        "inLanguage": "es",
+        "url": "https://samuelcastillogt.github.io/chordsAppWeb/",
+        "author": { "@id": "https://samuelcastillogt.github.io/#person" },
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+      },
+      {
+        "@type": "WebSite",
+        "name": "Universo Soda/Cerati",
+        "description": "Cancionero de guitarra con acordes y tablaturas de Soda Stereo y Gustavo Cerati.",
+        "inLanguage": "es",
+        "url": "https://acordes-app-web.vercel.app",
+        "author": { "@id": "https://samuelcastillogt.github.io/#person" }
       }
     ]
   }
@@ -313,8 +333,64 @@
       <div class="container">
         <div class="section-head">
           <h2 id="proyectos-titulo">Proyectos personales</h2>
-          <p>Productos que diseñé, desarrollé y publiqué de principio a fin.</p>
+          <p>Productos que diseñé, desarrollé y publiqué de principio a fin: web, APIs y apps móviles.</p>
         </div>
+
+        <article class="project project-wide" aria-labelledby="chordweaver">
+          <div class="project-media">
+            <img src="/media/chordweaver-analizador-de-acordes.webp" width="800" height="500" loading="lazy" decoding="async"
+              alt="Analizador de ChordWeaver: se pegan los acordes de una canción y explica tonalidad y función armónica">
+          </div>
+          <div>
+            <h3 id="chordweaver">ChordWeaver · Tejedor de Acordes</h3>
+            <p>No es otro cancionero: pegas los acordes de una canción y te explica <strong>por qué funciona</strong>
+              (tonalidad, grados romanos, función armónica y tensión) y te sugiere cómo seguir componiendo.
+              Producto completo con web, API y app móvil.</p>
+            <ul class="tags" aria-label="Tecnologías">
+              <li>Next.js</li><li>TypeScript</li><li>D3</li><li>Tone.js</li><li>FastAPI</li><li>PostgreSQL</li><li>Expo</li><li>Docker</li>
+            </ul>
+            <ul>
+              <li>Analizador que entiende cifrado americano y latino, séptimas, bemoles y acordes con bajo.</li>
+              <li>Explorador armónico con círculo de quintas en D3, audio con Tone.js y exportación de tablaturas.</li>
+              <li>API en FastAPI con SQLAlchemy asíncrono, cuentas con JWT y progresiones compartibles.</li>
+              <li>App móvil en Expo / React Native que consume la misma API.</li>
+            </ul>
+            <div class="project-links">
+              <a class="btn btn-primary btn-sm" href="https://samuelcastillogt.github.io/chordsAppWeb/" target="_blank" rel="noopener">Probar ChordWeaver</a>
+              <a class="btn btn-ghost btn-sm" href="https://chords-api-python.vercel.app/docs" target="_blank" rel="noopener">Documentación de la API</a>
+              <a class="btn btn-ghost btn-sm" href="https://github.com/samuelcastillogt/chordsAppWeb" target="_blank" rel="noopener">Código web</a>
+              <a class="btn btn-ghost btn-sm" href="https://github.com/samuelcastillogt/chordsApiPython" target="_blank" rel="noopener">Código API</a>
+              <a class="btn btn-ghost btn-sm" href="https://github.com/samuelcastillogt/tejedorAcordes" target="_blank" rel="noopener">Código app móvil</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project project-wide" aria-labelledby="soda-cerati">
+          <div class="project-media">
+            <img src="/media/universo-soda-cerati-cancionero.webp" width="800" height="500" loading="lazy" decoding="async"
+              alt="Portada de Universo Soda/Cerati, cancionero de guitarra con 173 canciones">
+          </div>
+          <div>
+            <h3 id="soda-cerati">Universo Soda/Cerati</h3>
+            <p>Cancionero de guitarra con más de 170 canciones y 200 transcripciones de Soda Stereo y Gustavo Cerati,
+              construido para posicionar en Google. Cada acorde muestra su diagrama y se conecta con ChordWeaver
+              para analizar la canción.</p>
+            <ul class="tags" aria-label="Tecnologías">
+              <li>Next.js App Router</li><li>SEO</li><li>FastAPI</li><li>SQLAlchemy</li><li>PostgreSQL</li>
+            </ul>
+            <ul>
+              <li>Páginas indexables con metadata SEO generadas en el servidor.</li>
+              <li>Cada tablatura se verifica con hash SHA-256 y las rutas inseguras se rechazan.</li>
+              <li>Backend con flujo editorial: lo importado nace en borrador y solo se publica tras revisión.</li>
+              <li>Blog integrado desde el feed de Blogger, con HTML saneado y revalidación cada hora.</li>
+            </ul>
+            <div class="project-links">
+              <a class="btn btn-primary btn-sm" href="https://acordes-app-web.vercel.app" target="_blank" rel="noopener">Visitar sitio</a>
+              <a class="btn btn-ghost btn-sm" href="https://github.com/samuelcastillogt/acordesAppWeb" target="_blank" rel="noopener">Código web</a>
+              <a class="btn btn-ghost btn-sm" href="https://github.com/samuelcastillogt/acordesAppBackend" target="_blank" rel="noopener">Código backend</a>
+            </div>
+          </div>
+        </article>
 
         <article class="project" aria-labelledby="radiolibre">
           <div class="project-media">
@@ -366,6 +442,48 @@
             </div>
           </div>
         </article>
+
+        <h3 class="subsection-title">Más proyectos</h3>
+        <div class="cards">
+          <article class="card">
+            <h4>Robot Motor: automatización web sin código</h4>
+            <p>Constructor visual de flujos: arrastras acciones (navegar, escribir, hacer clic, verificar) y el
+              backend las ejecuta en un navegador real, con captura de pantalla de cada corrida.</p>
+            <ul class="tags" aria-label="Tecnologías">
+              <li>React</li><li>TypeScript</li><li>dnd-kit</li><li>Zustand</li><li>FastAPI</li><li>Playwright</li><li>MySQL</li>
+            </ul>
+            <div class="project-links">
+              <a class="btn btn-ghost btn-sm" href="https://github.com/samuelcastillogt/robotFront" target="_blank" rel="noopener">Código frontend</a>
+              <a class="btn btn-ghost btn-sm" href="https://github.com/samuelcastillogt/robotBackendPy" target="_blank" rel="noopener">Código backend</a>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-img" src="/media/css-creator-generador-css.webp" width="800" height="500" loading="lazy" decoding="async"
+              alt="CSS Creator, herramienta para generar gradientes y sombras CSS">
+            <h4>CSS Creator</h4>
+            <p>Herramientas para desarrolladores: generador de gradientes y sombras con vista previa en vivo, y
+              conversor de CSS a estilos de React Native.</p>
+            <ul class="tags" aria-label="Tecnologías">
+              <li>Next.js</li><li>TypeScript</li><li>React Native</li>
+            </ul>
+            <div class="project-links">
+              <a class="btn btn-primary btn-sm" href="https://css-creator-five.vercel.app" target="_blank" rel="noopener">Probar</a>
+              <a class="btn btn-ghost btn-sm" href="https://github.com/samuelcastillogt/cssCreator" target="_blank" rel="noopener">Código</a>
+            </div>
+          </article>
+          <article class="card">
+            <h4>Lector EPUB móvil</h4>
+            <p>App para leer libros EPUB en el teléfono: biblioteca local, apertura de archivos del dispositivo y
+              lectura con gestos, renderizando epub.js dentro de un WebView.</p>
+            <ul class="tags" aria-label="Tecnologías">
+              <li>Expo</li><li>React Native</li><li>TypeScript</li><li>epub.js</li>
+            </ul>
+            <div class="project-links">
+              <a class="btn btn-ghost btn-sm" href="https://github.com/samuelcastillogt/EpubReaderMovil" target="_blank" rel="noopener">Código</a>
+            </div>
+          </article>
+        </div>
+        <p class="more-link"><a href="https://github.com/samuelcastillogt?tab=repositories" target="_blank" rel="me noopener">Ver todos mis repositorios en GitHub →</a></p>
       </div>
     </section>
 
@@ -382,15 +500,15 @@
           </div>
           <div class="stack-group">
             <h3>Móvil</h3>
-            <ul><li>React Native</li><li>SQLite</li><li>Firebase</li></ul>
+            <ul><li>React Native</li><li>Expo</li><li>SQLite</li><li>Firebase</li></ul>
           </div>
           <div class="stack-group">
             <h3>Backend</h3>
-            <ul><li>Node.js</li><li>Express</li><li>NestJS</li><li>C#</li><li>.NET</li><li>Python</li></ul>
+            <ul><li>Node.js</li><li>Express</li><li>NestJS</li><li>Python</li><li>FastAPI</li><li>C#</li><li>.NET</li></ul>
           </div>
           <div class="stack-group">
             <h3>Datos e infraestructura</h3>
-            <ul><li>SQL Server</li><li>Oracle</li><li>PostgreSQL</li><li>MySQL</li><li>Kubernetes</li><li>SAP</li></ul>
+            <ul><li>SQL Server</li><li>Oracle</li><li>PostgreSQL</li><li>MySQL</li><li>Docker</li><li>Kubernetes</li><li>SAP</li></ul>
           </div>
           <div class="stack-group">
             <h3>Diseño y proceso</h3>
